@@ -1,7 +1,10 @@
 // Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.
 //1
 function camelize(str) {
- //write your code here
+  const arrayOfString = str.split("")
+  const arrayOfStringNew = arrayOfString.map(item, idx) => { arrayOfString.splice(idx, 2, item.toUpperCase) }
+  return arrayOfString
+  //write your code here
 }
 
 console.log(camelize("background-color"))
